@@ -125,7 +125,7 @@ describe "#display_board in 'lib/display_board.rb" do
       
     end
     
-it 'prints more arbitrary arrangements of the board' do
+  it 'prints more arbitrary arrangements of the board' do
       board = ["X", "O", "X", "O", "X", "X", "O", "X", "O"]
 
       output = capture_puts{ display_board(board) }
@@ -163,3 +163,7 @@ it 'prints more arbitrary arrangements of the board' do
       expect(rows[3]).to eq("-----------")
       expect(rows[4]).to eq(" 0 | 0 | 0 ")
     end
+    
+  end
+  
+end
